@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Readers' Reviews | Dr Mike Teng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Dr Mike <span>Teng</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="about-author.html">About</a>
+      <a href="about-book.html">The Book</a>
+      <a href="endorsements.html">Endorsements</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="media.html">Media</a>
+      <a href="articles.html">Articles</a>
+      <a href="other-books.html">Books</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Readers' Reviews</h1>
+  <p>What the media and readers say about Corporate Turnaround</p>
+</div>
+
+<section class="section section-light">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Press &amp; Reader Feedback</p>
+    <h2 class="section-title reveal">Media Reviews</h2>
+
+    <div class="card-grid">
+
+      <div class="card reveal">
+        <div class="card-meta">May 2003</div>
+        <h4>Productivity Digest</h4>
+        <p>Review content from original publication.</p>
+        <a href="https://www.miketeng.com/corporateturnaround_1/reviews.htm" class="card-link" target="_blank" rel="noopener">Read Original &rarr;</a>
+      </div>
+
+      <div class="card reveal reveal-delay-1">
+        <div class="card-meta">5 May 2003</div>
+        <h4>The Star</h4>
+        <p>Review content from original publication.</p>
+        <a href="https://www.miketeng.com/corporateturnaround_1/reviews.htm" class="card-link" target="_blank" rel="noopener">Read Original &rarr;</a>
+      </div>
+
+      <div class="card reveal reveal-delay-2">
+        <div class="card-meta">March 2003</div>
+        <h4>SilverKris Magazine</h4>
+        <p>Review content from original publication.</p>
+        <a href="https://www.miketeng.com/corporateturnaround_1/reviews.htm" class="card-link" target="_blank" rel="noopener">Read Original &rarr;</a>
+      </div>
+
+      <div class="card reveal reveal-delay-3">
+        <div class="card-meta">December 2002</div>
+        <h4>Smart Investor</h4>
+        <p>Review content from original publication.</p>
+        <a href="https://www.miketeng.com/corporateturnaround_1/reviews.htm" class="card-link" target="_blank" rel="noopener">Read Original &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Dr Mike <span>Teng</span></a>
+        <p>Senior corporate consultant and published author helping leaders navigate complexity and turn around troubled businesses using proven methodology.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="about-author.html">About the Author</a>
+        <a href="about-book.html">About the Book</a>
+        <a href="endorsements.html">Endorsements</a>
+        <a href="reviews.html">Readers' Reviews</a>
+        <a href="media.html">Media Coverage</a>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="articles.html">Articles & Insights</a>
+        <a href="other-books.html">Other Books</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Corporate Turnaround Centre. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

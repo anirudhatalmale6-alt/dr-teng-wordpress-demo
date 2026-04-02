@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Dr Mike Teng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Dr Mike <span>Teng</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="about-author.html">About</a>
+      <a href="about-book.html">The Book</a>
+      <a href="endorsements.html">Endorsements</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="media.html">Media</a>
+      <a href="articles.html">Articles</a>
+      <a href="other-books.html">Books</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('mobile-open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Contact</h1>
+  <p>Get in touch with Corporate Turnaround Centre</p>
+</div>
+
+<section class="section section-light">
+  <div class="section-inner">
+    <div class="narrative reveal">
+      <h3>Corporate Turnaround Centre Pte Ltd</h3>
+      <p>Corporate Turnaround Centre Pte Ltd is an AI Diagnostic Powerhouse that democratizes expert corporate turnaround and transformation with actionable and comprehensive strategy confidentially - anywhere, anytime. The company was incorporated in September 2008.</p>
+
+      <div style="margin-top: 2.5rem; padding: 2rem; background: var(--ivory); border-left: 3px solid var(--gold);">
+        <p style="margin-bottom: 1rem;"><strong style="color: var(--text-dark);">Email:</strong><br>
+        <a href="mailto:admin@corporateturnaroundcentre.com">admin@corporateturnaroundcentre.com</a></p>
+
+        <p style="margin-bottom: 0;"><strong style="color: var(--text-dark);">Website:</strong><br>
+        <a href="https://www.corporateturnaroundcentre.com" target="_blank" rel="noopener">www.corporateturnaroundcentre.com</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Dr Mike <span>Teng</span></a>
+        <p>Senior corporate consultant and published author helping leaders navigate complexity and turn around troubled businesses using proven methodology.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="about-author.html">About the Author</a>
+        <a href="about-book.html">About the Book</a>
+        <a href="endorsements.html">Endorsements</a>
+        <a href="reviews.html">Readers' Reviews</a>
+        <a href="media.html">Media Coverage</a>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <a href="articles.html">Articles & Insights</a>
+        <a href="other-books.html">Other Books</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Corporate Turnaround Centre. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
