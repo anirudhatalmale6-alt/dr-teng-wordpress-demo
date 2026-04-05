@@ -1,0 +1,10 @@
+*.docx
+site/
+video-titles.json
+extracted/
+*.png
+!images/*.png
+/tmp/
+current-*.png
+draft-*.png
+wp-screenshot-*.png
